@@ -1,0 +1,15 @@
+title: Kakyll
+email: N/A
+description: Static Site Generator in Kotlin
+base_url: http://kakyll.com
+deploy: call deploy_kakyll # rsync via alias manager
+template_engine: handlebars
+posts:
+    directory: posts
+    template: post.hbs
+pages:
+    - index.hbs
+    - about.hbs
+    - tags.hbs
+directories:
+    - assets
