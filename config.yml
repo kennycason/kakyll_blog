@@ -5,11 +5,12 @@ base_url: http://kakyll.com
 deploy: call deploy_kakyll # rsync via alias manager
 template_engine: handlebars
 posts:
-    directory: posts
+    directory: news
     template: post.hbs
 pages:
     - index.hbs
-    - about.hbs
     - tags.hbs
+    - news.hbs
+    - docs.hbs
 directories:
     - assets

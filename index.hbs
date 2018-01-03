@@ -1,6 +1,87 @@
-Posts
-<ol>
-{{#each posts}}
-    <li><a href="{{ this.url }}">{{ this.title }} - {{ this.author }}</a></li>
-{{/each}}
-</ol>
+<div class="jumbotron">
+  <h1 class="display-4">Quickly build static Html sites and blogs.</h1>
+  <p class="lead">Written in Kotlin</p>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="jumbotron">
+      <h1 class="display-6">Yaml Config</h1>
+      <hr class="my-4">
+      <p class="lead">Configure all settings for your site via a single Yaml file.<br/><br/></p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="jumbotron">
+      <h1 class="display-6">Static Site</h1>
+      <hr class="my-4">
+      <p class="lead">No backend. No databases. Static files only. Simply copy files to server and be done.</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="jumbotron">
+      <h1 class="display-6">Open Source</h1>
+      <hr class="my-4">
+      <p class="lead">Kakyll is written in Kotlin. The project is open source. All code is available on <a href="https://github.com/kennycason/kakyll" target="new">GitHub</a>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-4">Getting Started</h1>
+  <hr class="my-4">
+
+  <div class="card text-white bg-primary mb-6">
+    <div class="card-body">
+      <h4 class="card-title">Terminal</h4>
+      <hr class="my-4">
+      <p class="card-text lead">
+        <font color="#66ffff>">~</font> <font color="#f43333>">$</font> brew install https://raw.githubusercontent.com/kennycason/kakyll/master/script/brew/kakyll.rb<br/>
+        <font color="#66ffff>">~</font> <font color="#f43333>">$</font> kakyll new my_site<br/>
+        <font color="#66ffff>">~</font> <font color="#f43333>">$</font> cd my_site<br/>
+        <font color="#66ffff>">~/my_site</font> <font color="#f43333>">$</font> kakyll serve<br/>
+        Building site<br/>
+        Cleaning site<br/>
+        └ Rendering [/Users/kenny/workspace/my_site/index.hbs]<br/>
+        └ Rendering [/Users/kenny/workspace/my_site/tags.hbs]<br/>
+        └ Rendering [/Users/kenny/workspace/my_site/about.hbs]<br/>
+        └ Copying directory [assets]<br/>
+        └ Rendering posts to directory [posts]<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;└ 2017-12-24-welcome-to-kakyll.md<br/>
+        └ Rendering tag pages to tags/<br/>
+        Starting server on http://localhost:8080<br/>
+        Watching [/Users/kenny/workspace/my_site] for changes<br/>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Yaml Config</h1>
+  <hr class="my-4">
+  <div class="card text-white bg-primary mb-6">
+    <div class="card-body">
+      <p class="card-text lead">
+        <font color="#66ffff>">title:</font> My Blog Title<br/>
+        <font color="#66ffff>">email:</font> you@email.com<br/>
+        <font color="#66ffff>">description:</font> My Blog is about random stuff like lorem ipsum and programming. I hope you enjoy.<br/>
+        <font color="#66ffff>">base_url:</font> http://kakyll.com <font color="#888888>"># The base url to your blog.</font><br/>
+        <font color="#66ffff>">template_engine:</font> handlebars<br/>
+        <font color="#66ffff>">deploy:</font> rsync -avz .... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># command to execut to deploy contents in _site/*</font><br/>
+        <font color="#66ffff>">encoding:</font> UTF-8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># encoding of files, defaults to UTF-8</font><br/>
+        <font color="#66ffff>">posts:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># configuration for your blog's posts</font><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<font color="#66ffff>">directory:</font> posts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># directory where your posts are located</font><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<font color="#66ffff>">template:</font> post.hbs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># optional template for posts</font><br/>
+        <font color="#66ffff>">pages:</font><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;- index.html<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;- about.html<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;- tags.html<br/>
+        <font color="#66ffff>">directories:</font><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;- assets<br/>
+      </p>
+    </div>
+  </div>
+</div>
