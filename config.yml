@@ -12,5 +12,7 @@ pages:
     - tags.hbs
     - news.hbs
     - docs.hbs
+tags:
+    template: news.hbs
 directories:
     - assets
