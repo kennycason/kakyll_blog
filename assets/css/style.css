@@ -1,6 +1,5 @@
 
 header {
-  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -26,3 +25,21 @@ footer {
   background-color: #333333;
   border-color: #111111;
 } */
+
+.code {
+  font-family: monospace;
+}
+
+.bg-terminal {
+  background-color: #333333;
+}
+
+.jumbotron {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.my-4 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}

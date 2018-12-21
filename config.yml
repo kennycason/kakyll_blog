@@ -3,6 +3,7 @@ email: N/A
 description: Static Site Generator in Kotlin
 base_url: http://kakyll.com
 deploy: call deploy_kakyll # rsync via alias manager
+date_format: MMMM d, yyyy
 template_engine: handlebars
 posts:
     directory: news
@@ -15,4 +16,4 @@ pages:
 tags:
     template: news.hbs
 directories:
-    - assets
+    - name: assets

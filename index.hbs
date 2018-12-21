@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h1 class="display-4">Quickly build static Html sites and blogs.</h1>
+  <h1 class="display-4">Quickly build static <font color="#333333>">&lt;html&gt;</font> sites and blogs.</h1>
   <p class="lead">Written in Kotlin</p>
 </div>
 
@@ -33,7 +33,7 @@
   <h1 class="display-4">Getting Started</h1>
   <hr class="my-4">
 
-  <div class="card text-white bg-primary mb-6">
+  <div class="card text-white bg-terminal mb-6">
     <div class="card-body">
       <h4 class="card-title">Terminal</h4>
       <hr class="my-4">
@@ -62,27 +62,30 @@
 <div class="jumbotron">
   <h1 class="display-4">Yaml Config</h1>
   <hr class="my-4">
-  <div class="card text-white bg-primary mb-6">
+  <div class="card text-white bg-terminal mb-6">
     <div class="card-body">
+      <h4 class="card-title">config.yml</h4>
+      <hr class="my-4">
       <p class="card-text lead">
         <font color="#66ffff>">title:</font> My Blog Title<br/>
         <font color="#66ffff>">email:</font> you@email.com<br/>
         <font color="#66ffff>">description:</font> My Blog is about random stuff like lorem ipsum and programming. I hope you enjoy.<br/>
         <font color="#66ffff>">base_url:</font> http://kakyll.com <font color="#888888>"># The base url to your blog.</font><br/>
         <font color="#66ffff>">template_engine:</font> handlebars<br/>
-        <font color="#66ffff>">deploy:</font> rsync -avz .... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># command to execut to deploy contents in _site/*</font><br/>
+        <font color="#66ffff>">date_format:</font> MMMM d, yyyy<br/>
+        <font color="#66ffff>">deploy:</font> rsync -avz ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># command to execut to deploy contents in _site/*</font><br/>
         <font color="#66ffff>">encoding:</font> UTF-8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># encoding of files, defaults to UTF-8</font><br/>
-        <font color="#66ffff>">posts:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># configuration for your blog's posts</font><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<font color="#66ffff>">directory:</font> posts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># directory where your posts are located</font><br/>
+        <font color="#66ffff>">posts:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># configuration for your blog's posts</font><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<font color="#66ffff>">directory:</font> posts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># directory where your posts are located</font><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;<font color="#66ffff>">template:</font> post.hbs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># optional template for posts</font><br/>
-            <font color="#66ffff>">tags:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># configuration for your blog's tag pages</font><br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#66ffff>">template:</font> index.hbs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># optional template for tags</font><br/>
-        <font color="#66ffff>">pages:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># single pages to render individually</font><br/>
+            <font color="#66ffff>">tags:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># configuration for your blog's tag pages</font><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#66ffff>">template:</font> index.hbs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># optional template for tags</font><br/>
+        <font color="#66ffff>">pages:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># single pages to render individually</font><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;- index.html<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;- about.html<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;- tags.html<br/>
-        <font color="#66ffff>">directories:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># directories to directly copy over</font><br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;- assets<br/>
+        <font color="#66ffff>">directories:</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#888888>"># directories to directly copy over</font><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;- <font color="#66ffff>">name:</font> assets<br/>
       </p>
     </div>
   </div>

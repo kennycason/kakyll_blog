@@ -1,0 +1,28 @@
+---
+title: Version 1.7 Release
+author: Kenny Cason
+tags: kakyll
+---
+
+## Features
+
+#### New Post Command
+
+You can now create new posts via the `new post` command.
+
+Usage:
+
+```bash
+kakyll new post "My New Post.markdown"
+```
+
+- This will create a new post prefixed with the current date.
+- The post name does not require quotations marks.
+- Spaces in the post name are automatically converted to dashes (`-`).
+- The post name must end in `.markdown` or `.md`.
+- The command will fail if the post already exists.
+
+
+## Bug Fixes
+
+- Markdown Render was not previously respecting options. This resulted in features such as GitHub tables not being rendered.
